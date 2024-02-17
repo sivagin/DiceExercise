@@ -10,6 +10,20 @@ namespace DiceExercise;
      4) Space Complexity is O(1) excluding the space taken for storing results.
      5) If its CPU intensive operation,we could use Parallel.For for iterations, but in this case, its not required.
  */
+/*
+   Sample Execution:
+
+       -- Optional to set iteration and dice count, default value is 10000 and 5 --
+
+       IDiceGame game = new DiceGameV1();
+       game.Run();
+       (or)
+       IDiceGame game = new DiceGameV1()
+                           .SetIterationCount(2500)
+                           .SetDiceCount(6);
+       game.Run();
+
+*/
 public class DiceGameV1 : IDiceGame
 {
     private int _iterationCount = 10000;
